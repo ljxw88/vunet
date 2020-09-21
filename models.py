@@ -218,7 +218,8 @@ def latent_kl(q, p):
     mean1 = q
     mean2 = p
 
-    kl = 0.5 * tf.square(mean2 - mean1)
+    # kl = 0.5 * tf.square(mean2 - mean1)
+    kl = mean2 - mean1
     kl = tf.reduce_sum(kl, axis = [1,2,3])
     kl = tf.reduce_mean(kl)
     return kl
