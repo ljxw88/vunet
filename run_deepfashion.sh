@@ -20,5 +20,5 @@ module load tensorflow/1.5.0-py36-gpu
 
 #module load opencv/2.4.13.2
 #CUDA_VISIBLE_DEVICES="2,3" python ./main.py --config market.yaml
-python ./main.py --config market.yaml
+python ./main.py --config deepfashion.yaml
 #python3 test_field.py
